@@ -1,0 +1,4 @@
+commands:
+  examplecommand:
+    description: An example command
+    response: <light_purple><bold>VIDEO GAMES
