@@ -96,6 +96,9 @@ public class MessageCommands extends JavaPlugin implements Listener {
 				.build();
 
 		LiteralCommandNode<CommandSourceStack> topCommand = literal("messagecommands")
+				.requires(source ->
+								  source.getSender().hasPermission("messagecommands.reload")
+										  || source.getSender().hasPermission("messagecommands.run"))
 				.then(reloadCommand)
 				.then(runCommand)
 				.build();
