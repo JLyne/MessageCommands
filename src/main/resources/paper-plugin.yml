@@ -1,6 +1,6 @@
 name: MessageCommands
 description: Simple plugin for configurable canned message commands
 version: @project.version@
-api-version: '1.21.1'
+api-version: '1.21.4'
 author: Jim (AnEnragedPigeon)
 main: uk.co.notnull.messagecommands.MessageCommands

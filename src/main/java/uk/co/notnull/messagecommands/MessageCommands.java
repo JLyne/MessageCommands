@@ -18,6 +18,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.List;
@@ -39,7 +40,7 @@ public class MessageCommands extends JavaPlugin implements Listener {
 
 		this.getServer().getPluginManager().registerEvents(this, this);
 
-		LifecycleEventManager<Plugin> manager = getLifecycleManager();
+		LifecycleEventManager<@NotNull Plugin> manager = getLifecycleManager();
         manager.registerEventHandler(LifecycleEvents.COMMANDS, event -> registerCommands(event.registrar()));
 	}
 
