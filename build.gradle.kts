@@ -13,11 +13,11 @@ java {
 }
 
 repositories {
-	mavenLocal()
-	mavenCentral()
 	maven {
 		url = uri("https://repo.papermc.io/repository/maven-public/")
 	}
+	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
