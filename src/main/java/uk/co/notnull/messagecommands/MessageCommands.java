@@ -30,7 +30,6 @@ import static io.papermc.paper.command.brigadier.Commands.literal;
 import static io.papermc.paper.command.brigadier.argument.ArgumentTypes.*;
 
 
-@SuppressWarnings("UnstableApiUsage")
 public class MessageCommands extends JavaPlugin implements Listener {
 	private final Map<String, MessageCommand> commands = new HashMap<>();
 
