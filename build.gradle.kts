@@ -25,7 +25,7 @@ dependencies {
 
 paper {
     main = "uk.co.notnull.messagecommands.MessageCommands"
-    apiVersion = libs.versions.paperApi.get().replace(Regex("\\-R\\d.\\d-SNAPSHOT"), "")
+    apiVersion = libs.versions.paperApi.get().replace(".build.+", "")
     authors = listOf("Jim (AnEnragedPigeon)")
     description = "Simple plugin for configurable canned message commands"
 }
