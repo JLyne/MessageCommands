@@ -1,6 +1,6 @@
 [versions]
 pluginYmlPaper = "0.9.0"
-paperApi = "26.1.1.build.+"
+paperApi = "26.1.2.build.+"
 
 [libraries]
 paperApi = { group = "io.papermc.paper", name = "paper-api", version.ref = "paperApi" }
